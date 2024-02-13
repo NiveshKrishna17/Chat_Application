@@ -26,10 +26,10 @@ io.on("connection", (socket) => {
           socket.to(data.room).emit("receive_message", data);
      })
 
-     cron.schedule('*/5 * * * * *', () => {
-          console.log('running a task every minute');
-          io.to("123").emit("receive_message", "dfddd")
-     });
+     // cron.schedule('*/5 * * * * *', () => {
+     //      console.log('running a task every minute');
+     //      io.to("123").emit("receive_message", "dfddd")
+     // });
 })
 
 server.listen(3203, () => {
