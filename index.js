@@ -28,7 +28,7 @@ io.on("connection", (socket) => {
 
      cron.schedule('*/5 * * * * *', () => {
           console.log('running a task every minute');
-          io.to("123").emit("receive_message","dfddd")
+          io.to("123").emit("receive_message", "dfddd")
      });
 })
 
